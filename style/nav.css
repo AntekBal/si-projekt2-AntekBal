@@ -1,0 +1,25 @@
+div.logo {
+  width: 10rem;
+  height: 10rem;
+}
+nav {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+div.menu {
+  display: flex;
+  flex-direction: column;
+  width: 2.5rem;
+}
+div.user > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
