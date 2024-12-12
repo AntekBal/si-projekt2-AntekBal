@@ -1,3 +1,11 @@
+:root {
+  --font-family-1: "Arial, Helvetica, sans-serif";
+  --color-text-1: #fff;
+  --font-family-2: "" Franklin Gothic Medium ", " Arial Narrow
+    ", Arial, sans-serif";
+  --background-color-1: #fdf504;
+}
+
 div.logo {
   width: 10rem;
   height: 10rem;
@@ -11,7 +19,6 @@ nav {
 div.menu {
   display: flex;
   flex-direction: column;
-  width: 2.5rem;
 }
 div.user > img {
   width: 70px;
@@ -21,5 +28,22 @@ div.user > img {
 a {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.8rem;
+}
+ul > li > a > span {
+  font-size: larger;
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
+}
+span.Other {
+  opacity: 0.3;
+}
+li {
+  padding: 0.5rem;
+}
+div.other > h5 {
+  opacity: 0.5;
+  padding: 0 0 0 0.8rem;
+}
+li:hover {
+  background-color: var(--background-color-1);
 }
