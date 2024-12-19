@@ -1,9 +1,10 @@
 :root {
-  --font-family-1: "Arial, Helvetica, sans-serif";
+  --font-family-1: "Helvetica", sans-serif;
   --color-text-1: #fff;
   --font-family-2: "" Franklin Gothic Medium ", " Arial Narrow
     ", Arial, sans-serif";
   --background-color-1: #fdf504;
+  --background-color-2: #d5cfcf7b;
 }
 
 div.logo {
@@ -12,9 +13,11 @@ div.logo {
 }
 nav {
   width: 30%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  top: 0;
+  position: sticky;
 }
 div.menu {
   display: flex;
@@ -39,11 +42,54 @@ span.Other {
 }
 li {
   padding: 0.5rem;
+  border-radius: 50px;
 }
 div.other > h5 {
   opacity: 0.5;
-  padding: 0 0 0 0.8rem;
+  padding: 2rem 0rem 2rem 1rem;
 }
 li:hover {
   background-color: var(--background-color-1);
+}
+li:active {
+  scale: 0.95;
+  transition: 0.2s;
+}
+div.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 15%;
+  margin: 2.5rem;
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+}
+div.user > span {
+  opacity: 0.3;
+  padding: 10px;
+}
+div.user > button {
+  border: none;
+}
+span.under-user {
+  opacity: 0.5;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+div.header-left {
+  display: flex;
+  gap: 10px;
+}
+span.notifications-3 {
+  background-color: var(--background-color-1);
+  font-weight: 800;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

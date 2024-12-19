@@ -1,15 +1,25 @@
-div.product {
-  width: 250px;
-  height: 250px;
+main {
+  flex-grow: 1;
 }
+
 div.products {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 5rem;
+  padding-top: 2rem;
+  justify-content: center;
 }
 div.product {
   border: 1px solid #ddd;
   border-radius: 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 div.product-content {
   display: flex;
@@ -19,9 +29,53 @@ div.product-content {
 }
 strong {
   color: var(--background-color-1);
-  font-size: 25px;
+  font-size: 40px;
   font-family: var(--font-family-2);
 }
 div.product-content > span {
   opacity: 0.3;
+}
+div.product > img {
+  margin: 10px;
+  height: 150px;
+  width: 230px;
+}
+div.product:active {
+  scale: 1.05;
+  transition: 0.2s;
+}
+div.product:hover {
+  cursor: pointer;
+}
+div.bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.5rem;
+}
+input {
+  border-radius: 15px;
+  background-color: var(--background-color-2);
+  border: none;
+  font-family: var(--font-family-2);
+  width: 17rem;
+  height: 2.5rem;
+}
+span.headerspan {
+  opacity: 0.5;
+}
+div.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h1 {
+  display: flex;
+  justify-content: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+div.input {
+  display: flex;
+  align-items: center;
 }
